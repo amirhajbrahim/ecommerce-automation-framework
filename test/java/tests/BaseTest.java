@@ -15,7 +15,6 @@ public class BaseTest {
     public void setUp() {
         String browser = ConfigReader.getProperty("browser");
         boolean headless = Boolean.parseBoolean(ConfigReader.getProperty("headless"));
-        test;
 
         DriverManager.setDriver(browser, headless);
         DriverManager.getDriver().get(ConfigReader.getProperty("base.url"));
